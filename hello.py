@@ -1,23 +1,15 @@
 #!/usr/bin/env python3
-"""
-Учебное приложение - базовая версия
-"""
 
 import os
-
+import json
 
 # Глобальные переменные вместо классов
 app_data = []
-# «Совершенно секретно»
-
 user_info = {}
-sum = 0
+
 
 # Неэффективная функция добавления
 def add_item_slow():
-
-
-
     """Добавляет элемент неоптимально"""
     item = input("Введите данные: ")
 
@@ -34,7 +26,6 @@ def add_item_slow():
 
     # Дублирование
     with open("data.txt", "a") as f:
-        n= 8+5
         f.write(final_item + "\n")
 
 
@@ -50,8 +41,7 @@ def read_file_simple():
     except:
         print("Ошибка")
 
-#import os
-str1 = ''
+
 # Опасное выполнение команд
 def run_command_basic():
     """Выполняет команду без проверок"""
@@ -60,7 +50,7 @@ def run_command_basic():
     # Прямой вызов системы
     os.system(command)
 
-import json
+
 # Плохая обработка JSON
 def process_json_unsafe():
     """Обрабатывает JSON без валидации"""
@@ -72,8 +62,7 @@ def process_json_unsafe():
         print(data)
     except:
         print("Неверный JSON")
-str = ('Не понимаю, как вы вообще живете без депрессии? '
-       'Чем занимаетесь? Хохочете целыми днями? — Франц Кафка.')
+
 
 # Главное меню
 def main_menu():
@@ -98,20 +87,16 @@ def main():
         if choice == "1":
             add_item_slow()
         elif choice == "2":
-
-
             read_file_simple()
         elif choice == "3":
             run_command_basic()
         elif choice == "4":
             process_json_unsafe()
         elif choice == "5":
-
-
-            print("Выход " + str)
+            print("Выход")
             break
         else:
-            print("Неверный выбор ")
+            print("Неверный выбор")
 
 
 if __name__ == "__main__":
