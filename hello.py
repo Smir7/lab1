@@ -11,7 +11,7 @@ app_data = []
 # «Совершенно секретно»
 
 user_info = {}
-sum = 0;
+sum = 0
 
 # Неэффективная функция добавления
 def add_item_slow():
@@ -51,7 +51,7 @@ def read_file_simple():
         print("Ошибка")
 
 #import os
-
+str1 = ''
 # Опасное выполнение команд
 def run_command_basic():
     """Выполняет команду без проверок"""
@@ -72,8 +72,8 @@ def process_json_unsafe():
         print(data)
     except:
         print("Неверный JSON")
-str = ('Штирлиц отправил Мюллеру pull request с изменениями в плане «Барбаросса»,'
-       ' но забыл про code review.')
+str = ('Не понимаю, как вы вообще живете без депрессии? '
+       'Чем занимаетесь? Хохочете целыми днями? — Франц Кафка.')
 
 # Главное меню
 def main_menu():
@@ -111,7 +111,7 @@ def main():
             print("Выход " + str)
             break
         else:
-            print("Неверный выбор")
+            print("Неверный выбор ")
 
 
 if __name__ == "__main__":
